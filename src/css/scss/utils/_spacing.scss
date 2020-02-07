@@ -1,0 +1,41 @@
+.m {
+	&t-0 {
+		margin-top: 0 !important;
+	}
+
+	&t-1 {
+		margin-top: 1.25rem;
+	}
+
+	&t-2 {
+		margin-top: 2rem;
+	}
+
+	&x-0 {
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+	}
+
+	&y-1 {
+		margin-top: .625rem;
+		margin-bottom: .625rem;
+	}
+}
+
+.p {
+	&-1 {
+		padding: 1.25rem 3.75rem 0 0.625rem !important;
+	}
+
+	&-sm-1 {
+		padding: 1.25rem !important;
+	}
+}
+
+@media(min-width: 600px) {	
+	.p {
+		&-sm-1 {
+			padding: 1.875rem 3.125rem !important;
+		}	
+	}
+}

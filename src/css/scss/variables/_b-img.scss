@@ -1,0 +1,122 @@
+.b-img {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	background: url(../img/sprites.png) no-repeat;
+
+	&_logo {
+	    background-size: 298px 304px;
+	    width: 193px; 
+	}	
+
+	&_piast {
+		background-position: -305px 0px;
+		width: 100px;
+		height: 39px;
+	}
+
+	&_erko {
+		background-position: -209px -309px;
+		width: 138px;
+		height: 28px;
+	}
+
+	&_zem {
+		background-position: -349px -307px;
+		width: 72px;
+		height: 61px;
+	}
+
+	&_sf-filter {
+		background-position: -294px -60px;
+		width: 76px;
+	}
+
+	&_turbo {
+		background-position: -209px -268px;
+	}
+
+	&_euroconcept {
+		background-position: -210px -173px;
+		height: 40px;
+	}
+
+	&_tendina {
+		background-position: -210px -215px;
+		height: 53px;
+	}
+
+	&_wesem {
+		background-position: -210px -133px;
+	}
+
+	&_yosi {
+		background-position: 0px -172px; 
+		width: 187px;
+		height: 170px;
+	}	
+
+	&_clock-1 {
+		background-position: 0px -52px;
+		width: 120px;
+	    height: 107px;
+	}
+
+	&_clock-2 {
+		background-position: -121px -52px;
+		width: 88px;
+	    height: 105px;
+	}
+
+	&_icon {	
+		background-position: -211px -54px;
+		width: 83px;
+		height: 79px;		
+	}
+
+	&_prev-arrow {
+		background-position: -372px -56px;
+	}
+
+	&_next-arrow {
+		background-position: -394px -56px;
+	}
+
+	&_prev-arrow, &_next-arrow {
+		width: 18px;
+		height: 35px;
+	}
+
+	&_logo, &_sf-filter {
+		height: 43px;
+	}
+
+	&_turbo, &_wesem {
+		width: 217px;
+		height: 38px;
+	}
+
+	&_euroconcept, &_tendina {
+		width: 219px;
+	}
+
+	&_clock-1, &_clock-2, &_icon, &_yosi {
+		margin-top: 1.25rem;
+		margin-bottom: 1.25rem;
+	}
+
+	&_piast, &_erko, &_zem, &_sf-filter, &_turbo, &_euroconcept, &_tendina, &_wesem {
+		margin-top: 1.875rem;
+		margin-bottom: 1.875rem;
+	}
+}
+
+@media (min-width: 875px) {	
+	.b-img {
+		&_logo {			
+			background-size: auto;
+			width: 279px;
+			height: 52px;			
+		}
+	}
+}

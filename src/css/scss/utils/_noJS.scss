@@ -1,0 +1,51 @@
+.no-js {	
+	body {
+		padding-top: 190px;		
+	}	
+	
+	.hamburger {
+		display: none;
+	}	
+
+	.menu {
+		display: flex;
+    	flex-wrap: wrap;
+    	justify-content: flex-end;    	
+
+		&__link {
+			padding: .6rem;
+		}
+	}	
+	
+	.carousel {
+		height: 410px;
+		overflow: scroll;    	
+
+		&-item {
+			height: auto;
+			float: none;
+			display: flex;
+		}		
+
+		&-indicators, &-control-prev, &-control-next {
+			display: none;
+		}
+	}		
+}
+
+@media( min-width: 578px ) {
+	.no-js {
+		body {		
+			padding-top: 130px;		
+		}	
+	}
+}
+
+@media( max-width: 768px ) {
+	.no-js {
+		.menu {
+			margin-top: 4rem;	
+			justify-content: center;			
+		}	
+	}
+}

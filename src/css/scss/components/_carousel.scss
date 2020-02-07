@@ -1,0 +1,110 @@
+.carousel {		
+	z-index: 1000;
+
+	&-item {
+		z-index: 1;
+	}
+		
+	&__content {		
+		padding: 2.25rem 0.625rem;	
+	}	
+
+	&__title {
+		margin-bottom: 1rem;
+	}	
+
+	&__text {
+		font-size: $text-xs;
+	}				
+
+	&__img {
+		margin: 0 auto;		
+	}
+		
+	&__quote-wrapper {
+		padding: .9rem;
+		height: 450px;			
+	}
+
+	&__quote {
+		text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);		
+	}
+
+	&__cite {
+		padding: 0.8125rem;
+		display: block;
+	}
+
+	&__content, &__quote {
+		color: $black;		
+	}
+
+	&__content, &__img {
+		height: 270px;		
+	}
+
+	.carousel-item.active, .carousel-item-next, .carousel-item-prev {
+	    display: flex;
+	}
+
+	.carousel-control-prev, .carousel-control-next {	
+		border: none;
+		background-color: transparent;
+	}
+}
+
+@media (min-width: 344px) {
+	.carousel {
+		&__quote-wrapper {
+			height: 377px;		
+		}
+	}
+}
+
+@media (min-width: 403px) {
+	.carousel {
+		&__quote-wrapper {
+			height: 340px;			
+		}
+	}
+}
+
+@media (min-width: 513px) {
+	.carousel {
+		&__quote-wrapper {
+			height: 295px;		
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.carousel {
+		&__text {
+			font-size: $text-s;
+		}
+
+		&__content, &__img {
+			height: 290px;
+		}		
+
+		&__quote-wrapper {
+			height: 240px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.carousel {
+		&__quote-wrapper {
+			height: 310px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.carousel {
+		&__quote-wrapper {
+			height: 250px;		
+		}
+	}
+}

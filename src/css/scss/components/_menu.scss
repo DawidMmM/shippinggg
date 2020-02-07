@@ -1,0 +1,59 @@
+.menu {
+	margin: .4rem 0 0;
+	border-top: 1px solid $gainsboro;
+	display: none;
+	list-style: none;			
+
+	&__item {
+		position: relative;
+	}
+	
+	&__item:hover &__link::after {
+		content: '';
+		width: 100%;
+	    border-bottom: 2px solid $orange;
+	    position: absolute;
+	    bottom: 0;	    
+	    left: 0;
+	}	
+
+	&__link {
+		padding: .5rem 0;
+		opacity: .7;	
+
+		&:hover {			
+			opacity: 1;
+			text-decoration: none;			
+		}
+	}
+
+	&_collapsing {
+		height: 0;
+		overflow: hidden;
+		transition: height .4s;
+	}
+
+	&__link, &_is-open {
+		display: block;		
+	}	
+
+	&__link, &__link:hover {
+		color: $black;
+	}
+}
+
+@media (min-width: 768px) {
+	.menu {
+		display: flex;
+		justify-content: flex-end;
+		border-top: none;
+
+		&__link {
+			padding: .5rem .5rem .2rem;
+		}
+
+		&_is-open {
+			display: flex;
+		}
+	}
+}

@@ -1,0 +1,5 @@
+.btn {
+	@include button-variant(#007bff, transparent);
+	@include button-size(.375rem, .75rem, 1.2rem, 1.5, .25rem);
+	cursor: pointer;
+}

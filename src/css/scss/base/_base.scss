@@ -1,0 +1,17 @@
+* {
+	scroll-behavior: smooth;
+}
+
+ol, ul, dl {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	padding-top: 55px;
+	font-family: $font-primary;
+}
+
+article {
+	margin-top: 3rem;
+}

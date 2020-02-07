@@ -1,0 +1,12 @@
+.title {	
+	margin-bottom: 1.25rem;
+	color: $black;
+	font-weight: 500;
+	font-size: $heading-m;	
+}
+
+@media (min-width: 767px) {
+	.title {
+		font-size: $heading-l;
+	}
+}

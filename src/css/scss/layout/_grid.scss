@@ -1,0 +1,64 @@
+.container {
+	@include make-container();
+	@include make-container-max-widths();
+}
+
+.row {
+	@include make-row();	
+}
+
+.col-7 {
+	@include make-col(7);	
+}
+
+.col-md-4-no-padding {
+	@include media-breakpoint-up(md) {
+	    @include make-col(4);
+	}
+}
+
+.col-md-6 {
+	@include media-breakpoint-up(md) {
+	    @include make-col(6);
+	}
+}
+
+.col-lg-2 {
+	@include media-breakpoint-up(lg) {
+	    @include make-col(2);
+	}
+}
+
+.col-lg-4 {
+	@include media-breakpoint-up(lg) {
+	    @include make-col(4);
+	}
+}
+
+.col-lg-5 {
+	@include media-breakpoint-up(lg) {
+	    @include make-col(5);
+	}
+}
+
+.col-lg-6 {
+	@include media-breakpoint-up(lg) {
+	    @include make-col(6);
+	}
+}
+
+.col-lg-7 {
+	@include media-breakpoint-up(lg) {
+	    @include make-col(7);
+	}
+}
+
+.col-lg-8 {
+	@include media-breakpoint-up(lg) {
+	    @include make-col(8);
+	}
+}
+
+.col-md-6, .col-lg-2, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8 {
+	@include make-col-ready();
+}

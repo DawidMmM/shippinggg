@@ -1,0 +1,14 @@
+.border {
+	&-orange {
+		border-color: $orange;
+	}
+
+	&-gray {
+		border-color: $light-gray;
+	}
+
+	&-orange, &-gray {
+		border-width: 10px;
+		border-style: solid;
+	}
+}

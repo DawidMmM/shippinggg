@@ -1,0 +1,13 @@
+.list {
+	li {
+		margin: 0 0 1.25rem 0;
+	}
+
+	&_ordered {
+		list-style-position: inside;
+	}	
+
+	&_unordered {
+		list-style: none;
+	}	
+}
